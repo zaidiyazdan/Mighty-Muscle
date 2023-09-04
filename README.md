@@ -1,8 +1,4 @@
-# React + Vite
+# Mighty Muscle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is a fitness app made with using 2 rapid apis which are used to get exercise data and youtube videos is is a React project which will help you to acchive your fitness goals.And you will be never confused which exercise to do.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
