@@ -2,7 +2,7 @@ import { Stack,Typography } from "@mui/material"
 import Icon from "../assets/icons/gym.png"
 
 const BodyPart = ({item,bodyPart,setBodyPart}) => {
-    <Stack 
+    return <Stack 
             type="button"
             alignItems="center"
             justifyContent="center"
@@ -26,8 +26,8 @@ const BodyPart = ({item,bodyPart,setBodyPart}) => {
                 }
             }
             >
-        <img src={Icon} alt="bumbell" style={{width: '40px' , height: '40px'}}/>
-        <h1>check check</h1>
+        <img src={Icon} alt="dumbell" style={{width: '40px' , height: '40px'}}/>
+        <h1>{item}</h1>
     </Stack>
 }
 
