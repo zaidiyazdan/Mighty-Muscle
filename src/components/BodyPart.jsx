@@ -1,5 +1,4 @@
 import { Stack,Typography } from "@mui/material"
-import Icon from "../assets/icons/gym.png"
 
 const BodyPart = ({item,bodyPart,setBodyPart}) => {
     return <Stack 
@@ -8,26 +7,24 @@ const BodyPart = ({item,bodyPart,setBodyPart}) => {
             justifyContent="center"
             className="bodyPart-card"
             sx = {
-                bodyPart === item ? {
-                    borderTop: '4px solid #FF2625',
-                    backgroundColor: '#FFF',
-                    borderBottomLeftRadius: '20px',
-                    width: '270px',
-                    height: '280px',
-                    cursor: "pointer",
-                    gap: '47px',
-                } : {
-                    backgroundColor: '#FFF',
-                    borderBottomLeftRadius: '20px',
-                    width: '270px',
-                    height: '280px',
-                    cursor: "pointer",
-                    gap: '47px',
+                {
+                        borderTop: bodyPart === item ? '4px solid #ff2625' : '',
+                        backgroundColor: '#FFF',
+                        borderBottomLeftRadius: '20px',
+                        width: '270px',
+                        height: '280px',
+                        cursor: "pointer",
+                        gap: '47px',
+                }
+            }
+            onClick={
+                ()=>{
+                    setBodyPart(item);
                 }
             }
             >
-        <img src={Icon} alt="dumbell" style={{width: '40px' , height: '40px'}}/>
-        <h1>{item}</h1>
+        <img src={`/icons/bodyPart-icon-${item}.png`} alt="dumbell" style={{width: '50px' , height: '50px'}}/>
+        <Typography fontSize={24} fontWeight="bold" color="#3A1212" textTransform="capitalize">{item}</Typography>
     </Stack>
 }
 
